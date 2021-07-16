@@ -1,0 +1,136 @@
+.form {
+    align-items: center;
+    max-width: fit-content;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.empty {
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.place {
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+    background-color: rgb(253, 252, 252);
+    color: rgb(53, 47, 47);
+}
+.blank-place {
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+    background-color: rgb(204, 203, 203);
+    color: rgb(53, 47, 47);
+    border: 2px solid red;
+}
+.error {
+    color: red;
+}
+.button {
+    height: 35.5px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(20, 14, 14);
+}
+
+.default {
+    margin: 0 auto;
+    max-width: fit-content;
+    text-align: center;
+    font-size: 25px;
+}
+
+.main {
+    max-width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.main-temperature {
+    font-size: 100px;
+}
+.condition {
+    font-size: 40px;
+    margin-left: 80px;
+    margin-right: 20px;
+}
+
+.weather-data {
+    margin: 40px;
+    max-width: fit-content;
+    /* display: flex; */
+    justify-content: space-between;
+}
+
+.values {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.weather-conditions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.forecast {
+    /* display: flex; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.each-forecast {
+    padding: 10px;
+    border: 0.05px outset;
+    margin: 20px;
+    max-width: fit-content;
+    height:200px;
+}
+
+@media screen and (max-width: 940px) {
+    .forecast {
+        display: none;
+    }
+    .weather-data {
+        margin: 0 auto;
+    }
+    .weather-conditions {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 446px) {
+    .main-temperature {
+        font-size: 80px;
+    }
+    .main {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 360 px) {
+    .main-temperature {
+        font-size: 40px;
+    }
+    .place {
+        width: 100px;
+    }
+    .form {
+        padding: 0 20px;
+    }
+    .main {
+        max-width: fit-content;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;     
+    }
+}
